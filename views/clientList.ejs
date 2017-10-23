@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>clientList</h1>
+    <ul>
+    <%
+    for(var i=0; i<clients.length; i++) {
+    %>
+       <li>Prenom: <%=clients[i].firstName%>, Nom: <%=clients[i].lastName%>, Email: <%=clients[i].email%>, Tel: <%=clients[i].phone%></li>
+    <%
+    }
+    %>
+    </ul>
+  </body>
+</html>
