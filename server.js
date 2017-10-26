@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 app.set('view engine', 'ejs');
+app.use(express.static('public'));
 
 var clientList = [
   {firstName: "John", lastName : "Doe", email: "john@gmail.com", phone: "0612457845"},
